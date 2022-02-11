@@ -13,7 +13,7 @@ WORKDIR /app
 # 这样可以利用 docker build cache
 # @see https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache
 COPY package.json .
-RUN yarn --registry=https://registry.npm.taobao.org
+RUN yarn --registry=https://registry.npmmirror.com
 
 # 复制剩余文件
 COPY . .
